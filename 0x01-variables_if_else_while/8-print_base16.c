@@ -1,25 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
+*main - Entry point
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
-        int num;
-        char letter;
-
-        for (num = 0; num < 10; num++)
-                putchar((num % 10) + '0');
-
-        for (letter = 'a'; letter <= 'f'; letter++)
-                putchar(letter);
-
-        putchar('\n');
-
-        return (0);
+char c = '0';
+while (c <= '9')
+{
+putchar(c);
+c++;
+}
+c = 'a';
+while (c <= 'f')
+{
+putchar(c);
+c++;
+}
+putchar('\n');
+return (0);
 }
