@@ -1,24 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
+*main - Entry point
+*Return: Always 0 (Success)
+*/
 int main(void)
 {
-        char letter;
-
-        for (letter = 'a'; letter <= 'z'; letter++)
-                putchar(letter);
-
-        for (letter = 'A'; letter <= 'Z'; letter++)
-                putchar(letter);
-
-        putchar('\n');
-
-        return (0);
+int n = 97;
+int c = 65;
+while (n <= 122)
+{
+putchar(n);
+n++;
+}
+while (c <= 90)
+{
+putchar(c);
+c++;
+}
+putchar('\n');
+return (0);
 }
